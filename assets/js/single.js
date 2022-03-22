@@ -10,9 +10,10 @@ var getRepoName = function () {
   if (repoName) {
     // display repo name on the page
     repoNameEl.textContent = repoName;
+
     getRepoIssues(repoName);
   } else {
-    // if no repo was given, redirect to the home page
+    // if no repo was given, redirect to the homepage
     document.location.replace("./index.html");
   }
 };
